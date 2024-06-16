@@ -47,7 +47,7 @@ Crea un archivo `.env` en la raíz del proyecto y añade las siguientes variable
 
 ```
 BASE_PATH=.
-DOCUMENT_PATH=./boe/dias
+DOCUMENT_PATH=./borm/dias
 SLEEP_TIME=2
 ```
 
