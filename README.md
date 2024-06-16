@@ -32,6 +32,12 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+### Cambiar permisos del ejecutable
+
+```bash
+sudo chmod +x justicioMurcia.py
+```
+
 ### Instalar Google Chrome
 
 Este proyecto se ha desarrollado en WSL (Windows Subsystem for Linux) Ubuntu/Debian 20.04. Puedes instalar Google Chrome usando los siguientes comandos:
@@ -53,12 +59,12 @@ SLEEP_TIME=2
 
 ## Uso
 
-### Ejecutar el Script
+### Extraer Información Para Una Fecha
 
-Para ejecutar el script de scraping y obtener los resultados para hoy, usa el siguiente comando:
+Para ejecutar el script de scraping y obtener los resultados para una fecha concreta:
 
 ```bash
-python justicioMurcia.py today
+./justicioMurcia.py 2024-06-15
 ```
 
 ### Extraer Información Entre Fechas
@@ -66,14 +72,15 @@ python justicioMurcia.py today
 Para extraer información de un rango de fechas:
 
 ```bash
-python justicioMurcia.py 2024-06-01 2024-06-15
+./justicioMurcia.py 2024-06-01 2024-06-15
 ```
 
 ## Estructura del Proyecto
 
 - `justicioMurcia.py`: Script principal para realizar el scraping.
 - `requirements.txt`: Lista de dependencias necesarias.
-- `borm/`: Carpeta donde se guardarán los archivos descargados.
+- `.env`: Archivo con variables de entorno utilizadas en el código.
+- `.gitignore`: Archivo para ignorar archivos y directorios en el control de versiones.
 
 ## Notas
 
